@@ -1,0 +1,31 @@
+Author: Tyler Vierbuchen, UMBC, CMSC 313 Mon-Wed 10am
+
+Purpose:This contains both c and c++ files to make a matrix library. The function implemented are AddMatrices which adds two matrices, 
+MultiplyMatrices which multiplies two matrices,MultiplyByInt which multiplies a matrix by and int, TransposeMatrix whcih trasposes a matrix,
+and a print function to print the contents of a matrix. The c++ file also contains other class related function to make a matrix object, 
+while the c file uses a struct to create matrix.
+
+Files:
+
+makefile is used to run both the c and c++ versions of matrix. Type make run1 or make val1 to run the c++ code.
+Type make run2 or make val2 to run the c code.
+
+Matrixcpp.h is the header for Matrixcpp.cpp
+Matrixcpp.cpp defines the functions in Matrixcpp.h to create a matrix object
+driver.cpp is used to create matrix objects and test/use the matrix functions
+
+Matrixc.h is the header for Matrixcpp.c and contains the Matrix struct and function prototypes
+Matrixc.c defines the function in Matrixc.h
+driver.c is used to make matrices and use/test the matrix functions
+
+Build Instruction: To run the code, go to either driver file to create some matrices and apply the functions to them.
+When you are ready to test, type make into the console, than type make run1 or make val1 to run the c++ code and
+type make run2 or make val2 to run the c code. val1 and val2 will run valgrind to look for memory leaks. Examples of testing
+the code can be found in the driver files as well.
+
+Testing Methodology: I used my print function to print the contents of a matrix and evaluate it. I also used valgring
+to make sure there were no memory leaks. I tested each function individualy, as well as creating matrix D as described in 
+the assignment on blackboard.
+
+Additional info: The c++ Matrix utilizes an overloaded = operator to make it easy to set the value of one matrix
+to the value of another.
