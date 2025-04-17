@@ -1,7 +1,7 @@
 CXX = g++
 CC = gcc
 CXXFLAGS = -Wall
-CFLAGS = -Wall
+CFLAGS = -std=c99 -m32 -O0 Matrixc.c Matrixc.h -Wall
 
 all: homeWork8cpp homeWork8c
 
